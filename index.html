@@ -1,25 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Videoteca</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- estilos -->
+    <link rel="stylesheet" href="styles/style.css">
 
   </head>
   <body>
+    <header class="header-container">
 
-  
+      <img class="header-logo" src="./assets/logo-responsive.png" alt="">
 
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <div class="header-menus">
+        <i class="header-icon header-menu-responsive icon-menu" id="mobile-menu"></i>
+
+        <nav class="header-nav" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#">Series</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Peliculas</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Deporte</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Música</a>
+            </li>
+          </ul>
+        </nav>
+
+        <form action="" class="header-form">
+          <input type="text" name="name" value="" class="header-input" id="search-input" placeholder="Buscar">
+          <button type="submit" name="button" class="header-button" id="search-button">
+            <i class="header-icon icon-search"></i>
+          </button>
+        </form>
+
+
+        <i class="header-icon icon-user"></i>
+
+      </div>
+    </header>
+
+
+
+
+
+
+  <script type="text/javascript" src="./js/app.js"></script>
   </body>
 </html>

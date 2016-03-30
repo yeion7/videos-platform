@@ -1,0 +1,92 @@
+.header
+  &-container
+    height: 76px
+    background: $color3;
+    padding: 5px 15px
+    position: relative;
+    display flex
+    justify-content: space-between;
+    align-items: center
+
+  &-menus
+    display: flex
+
+
+  &-logo
+    width: auto
+    height: 100%
+
+  &-icon
+    padding .5em
+    font-size: 2em;
+    cursor: pointer
+
+  &-form
+    display flex
+    align-items: center
+
+  &-input
+    line-height: 1.5em
+    border: none
+    display none
+    background: white
+    &:focus
+      outline-style: none;
+
+
+  &-button
+    background: transparent
+    border: none
+    cursor: pointer
+    font-size: 1em
+    &:focus
+      outline-style: none;
+
+  &-menu-responsive
+    order 1
+    @media screen and (min-width: 769px) {
+      display: none
+    }
+
+
+  &-nav
+    background: $color3;
+    position: absolute;
+    top: 76px
+    left 0
+    width: 100%
+    display: none
+    @media screen and (min-width: 769px) {
+      display: flex;
+      align-items: center
+      position: static;
+    }
+
+
+.nav
+  &-list
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+    @media screen and (min-width: 769px) {
+      flex-direction: row;
+    }
+
+  &-item
+    width: 100%
+    text-align: center
+
+    & a
+      display: block;
+      cursor: pointer
+      padding 1em
+      font-weight: 600;
+
+      &:hover
+        background: darken($color3, 20%)
+
+
+
+.show
+  display: block;
