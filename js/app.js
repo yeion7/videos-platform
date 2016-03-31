@@ -16,3 +16,14 @@ searchButton.addEventListener('click', function(ev) {
   console.log('funcoona')
   searchInput.classList.toggle('show');
 })
+
+
+var playButton = document.getElementById('play-button');
+var heroTape = document.getElementById('hero-tape');
+
+playButton.addEventListener('click', function(ev) {
+  ev.preventDefault();
+  console.log('fnu')
+  heroTape.classList.toggle('hiden');
+
+})

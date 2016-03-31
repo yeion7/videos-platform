@@ -85,6 +85,7 @@ body {
 .header-nav {
   background: #fdfdfd;
   position: absolute;
+  z-index: 10000;
   top: 76px;
   left: 0;
   width: 100%;
@@ -185,4 +186,125 @@ body {
 }
 .footer-logo {
   padding-right: 2em;
+}
+.hero-container {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  background: #111;
+  position: relative;
+}
+.hero-cover {
+  width: 100%;
+  height: 100%;
+}
+.hero-cover img {
+  width: 100%;
+  height: 100%;
+}
+.hero-play {
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 6em;
+  cursor: pointer;
+  color: #29dfeb;
+  box-shadow: inset 0 0 0.7em #29dfeb;
+  padding: 0;
+  border-radius: 50%;
+}
+.hero-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: -webkit-linear-gradient(bottom, #000, rgba(0,0,0,0));
+  background: linear-gradient(to top, #000, rgba(0,0,0,0));
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 15px;
+}
+.video-artist {
+  color: #29dfeb;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 0.3em 0;
+}
+.video-name {
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.video-options {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.video-genere {
+  color: #29dfeb;
+  border: 2px solid;
+  padding: 0.4em 0.8em;
+  border-radius: 8px;
+  margin: 0px 0.5em;
+}
+.video-views,
+.video-likes {
+  cursor: pointer;
+  color: #29dfeb;
+  font-size: 2em;
+  margin: 0 0.5em;
+}
+.video-points {
+  margin: 0.5em;
+}
+.video-point {
+  color: #29dfeb;
+  margin: 0.2em;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.video-point_active {
+  background: #29dfeb;
+}
+.player-container {
+  width: 80%;
+  height: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #ddd;
+}
+.player-container video {
+  width: 100%;
+  height: 100%;
+}
+.hiden {
+  display: none;
 }
