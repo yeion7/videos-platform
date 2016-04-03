@@ -1,0 +1,108 @@
+.videos
+  &-container
+    padding 15px
+
+  &-seleccion
+    display: flex
+    justify-content: space-between;
+    align-items: center
+    padding 1em 0
+
+  &-category
+    font-size: 1.8em
+    font-weight: bold;
+
+  &-prev
+    padding .4em
+    border 3px solid #ccc
+    border-radius: 4px
+    color #ccc
+    cursor pointer
+
+  &-next
+    padding .4em
+    border 3px solid $color-primary
+    border-radius: 4px
+    color #ccc
+    background: $color-primary
+    cursor pointer
+
+  &-items
+    display flex
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin 15px 0
+    @media screen and (min-width: 769px) {
+      justify-content: space-between;
+    }
+
+  &-item
+    background: white
+    width: 300px
+    height: 320px
+    margin: 15px 0
+
+
+    &-tape
+      width: 100%
+      height: 70%
+      position: relative;
+
+
+    &-cover
+      width: 100%
+      height: 100%
+
+    &-info
+      position: absolute;
+      bottom: 0px
+      width: 100%
+      height: 30%
+      background: linear-gradient(to top, #000, rgba(0, 0, 0, 0))
+      display: flex;
+      justify-content: space-around;
+      align-items: center
+      padding: 10px
+
+    &-time
+    &-likes
+    &-message
+      font-weight: bold;
+      color white
+
+    &-icon
+      color $color-primary
+
+    &-duration
+      color: $color-primary
+      font-weight: bold;
+    &-name
+      padding 10px
+      height: 30%
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+    &-title
+      font-weight: bold;
+
+    &-avatar
+      width: 20px
+      height: 20px
+      border-radius: 50%
+
+
+    &-artist
+      color #ccc
+      text-transform: uppercase;
+      font-size: .8em
+      font-weight: bold;
+      margin 0 .4em
+
+    &-views
+      color #ccc
+      font-size: .6em
+
+    &-play
+      display: flex;
+      align-items: baseline;
