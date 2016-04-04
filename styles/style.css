@@ -334,12 +334,10 @@ body {
 .hero-container {
   width: 100%;
   overflow: hidden;
-  background: #111;
   position: relative;
 }
 .hero-medium {
-  min-height: 35vh;
-  max-height: 300px;
+  min-height: 10vh;
 }
 .hero-large {
   min-height: 80vh;
@@ -610,6 +608,11 @@ body {
   color: #ccc;
   background: #dc2028;
   cursor: pointer;
+}
+.videos-icon {
+  font-size: 1.5em;
+  color: #dc2028;
+  margin-right: 5px;
 }
 .videos-items {
   display: -webkit-box;
@@ -915,4 +918,172 @@ body {
 }
 .terminos-term-text {
   color: #777;
+}
+.perfil-container {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+@media screen and (min-width: 769px) {
+  .perfil-container {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+.perfil-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.perfil-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.perfil-text {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.perfil-editar {
+  color: #dc2028;
+  cursor: pointer;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+.perfil-categories {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 769px) {
+  .perfil-categories {
+    width: auto;
+    margin-left: 50px;
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+  }
+}
+.perfil-categories div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.perfil-image {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 15px 0;
+}
+@media screen and (min-width: 769px) {
+  .perfil-image {
+    width: auto;
+    margin: 0 50px;
+  }
+}
+.perfil-img {
+  width: 80px;
+  height: 80px;
+  margin: 10px 0;
+}
+.perfil-options {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+@media screen and (min-width: 769px) {
+  .perfil-options {
+    width: auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .perfil-options {
+    margin-left: 50px;
+  }
+}
+.perfil-icon {
+  color: #aaa;
+  font-size: 1.6em;
+  margin-left: 0.5em;
+}
+.perfil-number {
+  color: #dc2028;
+  font-weight: bold;
+  font-size: 2em;
+}
+.perfil-stat {
+  -webkit-box-ordinal-group: 0;
+  -webkit-order: -1;
+      -ms-flex-order: -1;
+          order: -1;
+  margin: 15px 0;
+}
+@media screen and (min-width: 769px) {
+  .perfil-stat {
+    width: auto;
+    margin: 0;
+    margin-bottom: 50px;
+  }
 }

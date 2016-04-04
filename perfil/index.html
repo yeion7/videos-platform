@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Videoteca</title>
+
+    <!-- estilos -->
+    <link rel="stylesheet" href="../styles/style.css">
+
+  </head>
+  <body>
+    <div class="modal-container hiden" id="modal">
+      <div class="modal-box">
+        <a class="modal-close" id="modal-close">X</a>
+        <img class="modal-logo" src="../images/logo.png" alt="">
+        <div class="modal-content">
+
+        <!-- contenido del modal login-->
+
+          <form class="modal-form" action="" method="post">
+            <input class="modal-input" type="text" name="name" value="" placeholder="Nombre del usuario">
+            <input class="modal-input" type="email" name="name" value="" placeholder="Correo">
+            <button class="modal-button" type="submit" name="button">Ingresar</button>
+          </form>
+          <a href="" class="modal-button modal-button-facebook ">
+            <i class="icon-social-facebook"></i>
+            Conectar con Facebook
+          </a>
+          <a href="" class="modal-button modal-button-twitter">
+            <i class="icon-social-twitter"></i>
+            Conectar con Twitter
+          </a>
+          <div class="modal-links">
+            <a href="#" class="modal-link">No tengo Cuenta</a>
+            <a href="#" class="modal-link">Olvide mi Contraseña</a>
+          </div>
+
+        <!-- fin contenido del modal login-->
+
+        </div>
+      </div>
+    </div>
+
+    <header class="header-container">
+
+      <img class="header-logo" src="../images/logo-responsive.png" alt="">
+
+      <div class="header-menus">
+        <i class="header-icon header-menu-responsive icon-menu" id="mobile-menu"></i>
+
+        <nav class="header-nav" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#">Series</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Peliculas</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Deporte</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Música</a>
+            </li>
+          </ul>
+        </nav>
+
+        <form action="" class="header-form">
+          <input type="text" name="name" value="" class="header-input" id="search-input" placeholder="Buscar">
+          <button type="submit" name="button" class="header-button" id="search-button">
+            <i class="header-icon icon-search"></i>
+          </button>
+        </form>
+
+        <i class="header-icon icon-user" id="signin"></i>
+
+      </div>
+    </header>
+
+    <div class="app">
+
+      <!-- hero canal -->
+
+      <section class="hero-container hero-medium">
+        <div class="perfil-container">
+          <img src="../images/cover.jpg" alt="" class="perfil-avatar">
+          <div class="perfil-info">
+            <div>
+              <span class="perfil-text">SCIENTIFANTASTIC</span>
+              <a href="#" class="perfil-editar">editar</a>
+            </div>
+            <div>
+              <span class="perfil-text">Info</span>
+              <a href="#" class="perfil-editar">editar</a>
+            </div>
+            <div>
+              <span class="perfil-text">scientifantastic@gmail.com</span>
+            </div>
+            <div>
+              <span class="perfil-text">Contraseña</span>
+              <span class="perfil-text">**********</span>
+            </div>
+          </div>
+
+          <div class="perfil-categories">
+            <div>
+            <label for="musica-perfil" class="perfil-text"><input type="radio" name="category" id="musica-perfil">Música</label>
+            <label for="tecnologia-perfil" class="perfil-text"><input type="radio" name="category" id="tecnologia-perfil">Tecnologia</label>
+            <label for="familia-perfil" class="perfil-text"><input type="radio" name="category" id="familia-perfil">Familia</label>
+            </div>
+
+            <div>
+            <label for="deportes-perfil" class="perfil-text"><input type="radio" name="category" id="deportes-perfil">Deportes</label>
+            <label for="entretenimiento-perfil" class="perfil-text"><input type="radio" name="category" id="entretenimiento-perfil">Entretenimiento</label>
+            <label for="social-perfil" class="perfil-text"><input type="radio" name="category" id="social-perfil">Social</label>
+            </div>
+          </div>
+
+          <div class="perfil-image">
+            <img src="../images/cover.jpg" alt="" class="perfil-img">
+            <a href="#" class="perfil-editar">Cambiar</a>
+          </div>
+
+          <div class="perfil-options">
+            <a href="#" class="button-primary">Cerrar sesión</a>
+            <div class="perfil-stat">
+              <i class="icon-views perfil-icon"></i><span class="perfil-number">65</span>
+              <i class="icon-like perfil-icon"></i><span class="perfil-number">35</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- fin hero canal -->
+
+      <section class="videos-container">
+
+        <div class="videos-seleccion">
+          <div class="videos-title">
+            <i class="icon-like videos-icon"></i>
+            <h2 class="videos-category">Apreciados</h2>
+
+          </div>
+
+          <div class="">
+            <i class="icon-prev videos-prev"></i>
+            <i class="icon-next videos-next "></i>
+          </div>
+        </div>
+
+        <div class="videos-items">
+
+
+          <div class="videos-item">
+            <div class="videos-item-tape">
+              <img src="../images/cover.jpg" class="videos-item-cover" alt="">
+              <div class="videos-item-info">
+                <span class="videos-item-time">2 años</span>
+                <span class="videos-item-likes">
+                  <i class="icon-like videos-item-icon"></i>
+                  4.500
+                </span>
+                <span class="videos-item-message">
+                  <i class="icon-message videos-item-icon"></i>
+                  23
+                </span>
+                <span class="videos-item-duration">3:24</span>
+              </div>
+            </div>
+            <div class="videos-item-name">
+              <h2 class="videos-item-title">Quedate Luna by Devendra Bengart</h2>
+              <div class="videos-item-play">
+                <img src="../images/cover.jpg" alt="" class="videos-item-avatar">
+                <h5 class="videos-item-artist">scientifantastic</h5>
+                <span class="videos-item-views">2.5M Plays</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="videos-item">
+            <div class="videos-item-tape">
+              <img src="../images/cover.jpg" class="videos-item-cover" alt="">
+              <div class="videos-item-info">
+                <span class="videos-item-time">2 años</span>
+                <span class="videos-item-likes">
+                  <i class="icon-like videos-item-icon"></i>
+                  4.500
+                </span>
+                <span class="videos-item-message">
+                  <i class="icon-message videos-item-icon"></i>
+                  23
+                </span>
+                <span class="videos-item-duration">3:24</span>
+              </div>
+            </div>
+            <div class="videos-item-name">
+              <h2 class="videos-item-title">Quedate Luna by Devendra Bengart</h2>
+              <div class="videos-item-play">
+                <img src="../images/cover.jpg" alt="" class="videos-item-avatar">
+                <h5 class="videos-item-artist">scientifantastic</h5>
+                <span class="videos-item-views">2.5M Plays</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="videos-item">
+            <div class="videos-item-tape">
+              <img src="../images/cover.jpg" class="videos-item-cover" alt="">
+              <div class="videos-item-info">
+                <span class="videos-item-time">2 años</span>
+                <span class="videos-item-likes">
+                  <i class="icon-like videos-item-icon"></i>
+                  4.500
+                </span>
+                <span class="videos-item-message">
+                  <i class="icon-message videos-item-icon"></i>
+                  23
+                </span>
+                <span class="videos-item-duration">3:24</span>
+              </div>
+            </div>
+            <div class="videos-item-name">
+              <h2 class="videos-item-title">Quedate Luna by Devendra Bengart</h2>
+              <div class="videos-item-play">
+                <img src="../images/cover.jpg" alt="" class="videos-item-avatar">
+                <h5 class="videos-item-artist">scientifantastic</h5>
+                <span class="videos-item-views">2.5M Plays</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="videos-item">
+            <div class="videos-item-tape">
+              <img src="../images/cover.jpg" class="videos-item-cover" alt="">
+              <div class="videos-item-info">
+                <span class="videos-item-time">2 años</span>
+                <span class="videos-item-likes">
+                  <i class="icon-like videos-item-icon"></i>
+                  4.500
+                </span>
+                <span class="videos-item-message">
+                  <i class="icon-message videos-item-icon"></i>
+                  23
+                </span>
+                <span class="videos-item-duration">3:24</span>
+              </div>
+            </div>
+            <div class="videos-item-name">
+              <h2 class="videos-item-title">Quedate Luna by Devendra Bengart</h2>
+              <div class="videos-item-play">
+                <img src="../images/cover.jpg" alt="" class="videos-item-avatar">
+                <h5 class="videos-item-artist">scientifantastic</h5>
+                <span class="videos-item-views">2.5M Plays</span>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </section>
+
+      <section class="videos-container">
+
+        <div class="videos-seleccion">
+          <div class="videos-title">
+            <i class="icon-views videos-icon"></i>
+            <h2 class="videos-category">vistos</h2>
+
+          </div>
+
+
+        </div>
+
+        <div class="videos-items">
+
+
+          <div class="videos-item">
+            <div class="videos-item-tape">
+              <img src="../images/cover.jpg" class="videos-item-cover" alt="">
+              <div class="videos-item-info">
+                <span class="videos-item-time">2 años</span>
+                <span class="videos-item-likes">
+                  <i class="icon-like videos-item-icon"></i>
+                  4.500
+                </span>
+                <span class="videos-item-message">
+                  <i class="icon-message videos-item-icon"></i>
+                  23
+                </span>
+                <span class="videos-item-duration">3:24</span>
+              </div>
+            </div>
+            <div class="videos-item-name">
+              <h2 class="videos-item-title">Quedate Luna by Devendra Bengart</h2>
+              <div class="videos-item-play">
+                <img src="../images/cover.jpg" alt="" class="videos-item-avatar">
+                <h5 class="videos-item-artist">scientifantastic</h5>
+                <span class="videos-item-views">2.5M Plays</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="videos-item">
+            <div class="videos-item-tape">
+              <img src="../images/cover.jpg" class="videos-item-cover" alt="">
+              <div class="videos-item-info">
+                <span class="videos-item-time">2 años</span>
+                <span class="videos-item-likes">
+                  <i class="icon-like videos-item-icon"></i>
+                  4.500
+                </span>
+                <span class="videos-item-message">
+                  <i class="icon-message videos-item-icon"></i>
+                  23
+                </span>
+                <span class="videos-item-duration">3:24</span>
+              </div>
+            </div>
+            <div class="videos-item-name">
+              <h2 class="videos-item-title">Quedate Luna by Devendra Bengart</h2>
+              <div class="videos-item-play">
+                <img src="../images/cover.jpg" alt="" class="videos-item-avatar">
+                <h5 class="videos-item-artist">scientifantastic</h5>
+                <span class="videos-item-views">2.5M Plays</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="videos-item">
+            <div class="videos-item-tape">
+              <img src="../images/cover.jpg" class="videos-item-cover" alt="">
+              <div class="videos-item-info">
+                <span class="videos-item-time">2 años</span>
+                <span class="videos-item-likes">
+                  <i class="icon-like videos-item-icon"></i>
+                  4.500
+                </span>
+                <span class="videos-item-message">
+                  <i class="icon-message videos-item-icon"></i>
+                  23
+                </span>
+                <span class="videos-item-duration">3:24</span>
+              </div>
+            </div>
+            <div class="videos-item-name">
+              <h2 class="videos-item-title">Quedate Luna by Devendra Bengart</h2>
+              <div class="videos-item-play">
+                <img src="../images/cover.jpg" alt="" class="videos-item-avatar">
+                <h5 class="videos-item-artist">scientifantastic</h5>
+                <span class="videos-item-views">2.5M Plays</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="videos-item">
+            <div class="videos-item-tape">
+              <img src="../images/cover.jpg" class="videos-item-cover" alt="">
+              <div class="videos-item-info">
+                <span class="videos-item-time">2 años</span>
+                <span class="videos-item-likes">
+                  <i class="icon-like videos-item-icon"></i>
+                  4.500
+                </span>
+                <span class="videos-item-message">
+                  <i class="icon-message videos-item-icon"></i>
+                  23
+                </span>
+                <span class="videos-item-duration">3:24</span>
+              </div>
+            </div>
+            <div class="videos-item-name">
+              <h2 class="videos-item-title">Quedate Luna by Devendra Bengart</h2>
+              <div class="videos-item-play">
+                <img src="../images/cover.jpg" alt="" class="videos-item-avatar">
+                <h5 class="videos-item-artist">scientifantastic</h5>
+                <span class="videos-item-views">2.5M Plays</span>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </section>
+
+
+
+
+    </div>
+
+    <footer class="footer-container">
+      <div class="footer-left">
+        <a href="#" class="footer-logo">
+          LOGO
+        </a>
+
+        <a href="#">
+          <i class="footer-icon icon-facebook"></i>
+        </a>
+
+        <a href="#">
+          <i class="footer-icon icon-twitter"></i>
+        </a>
+      </div>
+
+      <div class="footer-right">
+        <a href="#" class="footer-terminos">Terminos y Condiciones </a>
+      </div>
+
+
+    </footer>
+
+  <script type="text/javascript" src="../js/app.js"></script>
+  </body>
+</html>
