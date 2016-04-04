@@ -14,6 +14,9 @@ var searchInput = document.getElementById('search-input');
 searchButton.addEventListener('click', function(ev) {
   ev.preventDefault();
   searchInput.classList.toggle('show');
+  mobileMenu.classList.toggle('hiden');
+  navMenu.classList.toggle('hiden');
+  signinButton.classList.toggle('hiden');
 })
 
 

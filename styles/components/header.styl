@@ -25,14 +25,20 @@
   &-form
     display flex
     align-items: center
+    justify-content: flex-end;
 
   &-input
-    line-height: 1.5em
+    width: 50%
+    border-radius: 5px
+    line-height: 3em
     border: none
     display none
     background: white
     &:focus
       outline-style: none;
+    @media screen and (min-width: 769px) {
+      width: 100%
+    }
 
 
   &-button
