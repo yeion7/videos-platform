@@ -338,6 +338,7 @@ body {
 }
 .hero-medium {
   min-height: 10vh;
+  max-height: 40vh;
 }
 .hero-large {
   min-height: 80vh;
