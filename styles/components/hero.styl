@@ -1,11 +1,18 @@
 .hero
   &-container
     width: 100%
-    min-height: 80vh
-    max-height: 500px
     overflow: hidden;
     background: #111
     position: relative;
+
+  &-medium
+    min-height: 35vh
+    max-height: 300px
+
+
+  &-large
+    min-height: 80vh
+    max-height: 500px
 
   &-cover
     width: 200%
@@ -45,6 +52,7 @@
 
 
 .video
+
   &-artist
     color $color-primary
     font-weight: bold;
@@ -53,6 +61,8 @@
     @media screen and (min-width: 769px) {
         font-size: 1.5em
       }
+
+
   &-name
     color white
     font-size: 1.5em
@@ -91,6 +101,38 @@
 
   &-point_active
     background: $color-primary
+
+  &-left
+    width: 60%
+    display: flex;
+    align-items: center
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+  &-canal
+    position: absolute;
+    bottom: 0
+    left 15px
+    background: $color-primary
+    text-transform: uppercase;
+    padding: 1em
+    font-weight: bold;
+    color white
+    font-size: 1.3em
+  &-right
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+
+
+  &-text
+    color $color-primary
+    font-size: 1.8em
+    font-weight: bold;
+
+  &-icon
+    font-size: 1.8em
+    color white
 
 
 .player
