@@ -11,7 +11,40 @@
   &-title
     display flex
     align-items: center
+    flex-wrap: wrap;
+
+  &-select
+    background: none
+    border 1px solid #aaa
+    font-size: 1.2em
+    color #aaa
+    border-radius: 5px
     
+    padding .2em
+
+  &-order
+    font-weight: bold;
+    font-size: 1em
+    padding: .5em 1em
+    cursor pointer
+    &:active
+      background: $color-primary
+      border-radius: 5px
+      color white
+
+    &-desk
+      display none
+      @media screen and (min-width: 769px) {
+        display: flex
+
+      }
+
+    &-mobile
+      @media screen and (min-width: 769px) {
+        display: none
+      }
+
+
   &-category
     font-size: 1.8em
     font-weight: bold;
