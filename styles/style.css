@@ -594,6 +594,7 @@ body {
 .videos-category {
   font-size: 1.8em;
   font-weight: bold;
+  text-transform: capitalize;
 }
 .videos-prev {
   padding: 0.4em;
@@ -652,30 +653,24 @@ body {
   height: 100%;
 }
 .videos-item-info {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  height: 25%;
-  background: -webkit-linear-gradient(bottom, #000, rgba(0,0,0,0));
-  background: linear-gradient(to top, #000, rgba(0,0,0,0));
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 10px;
 }
 .videos-item-time,
 .videos-item-likes,
 .videos-item-message {
   font-weight: bold;
-  color: #fff;
 }
 .videos-item-icon {
   color: #dc2028;
@@ -703,32 +698,6 @@ body {
 }
 .videos-item-title {
   font-weight: bold;
-}
-.videos-item-avatar {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-}
-.videos-item-artist {
-  color: #ccc;
-  text-transform: uppercase;
-  font-size: 0.8em;
-  font-weight: bold;
-  margin: 0 0.4em;
-}
-.videos-item-views {
-  color: #ccc;
-  font-size: 0.6em;
-}
-.videos-item-play {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-  -webkit-align-items: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
 }
 .modal-container {
   position: fixed;
