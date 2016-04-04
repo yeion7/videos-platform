@@ -1,5 +1,5 @@
-var mobileMenu = document.getElementById('mobile-menu');
 var navMenu = document.getElementById('nav-menu');
+var mobileMenu = document.getElementById('mobile-menu');
 
 mobileMenu.addEventListener('click', function(ev){
   ev.preventDefault();
@@ -13,7 +13,6 @@ var searchInput = document.getElementById('search-input');
 
 searchButton.addEventListener('click', function(ev) {
   ev.preventDefault();
-  console.log('funcoona')
   searchInput.classList.toggle('show');
 })
 
@@ -23,7 +22,24 @@ var heroTape = document.getElementById('hero-tape');
 
 playButton.addEventListener('click', function(ev) {
   ev.preventDefault();
-  console.log('fnu')
   heroTape.classList.toggle('hiden');
 
+})
+
+
+var signinButton = document.getElementById('signin');
+var modalContainer = document.getElementById('modal')
+var modalButton = document.getElementById('modal-close');
+
+
+signinButton.addEventListener('click', function(ev) {
+  ev.preventDefault();
+  console.log('fnu')
+  modalContainer.classList.toggle('hiden');
+
+})
+
+modalButton.addEventListener('click', function(ev) {
+  ev.preventDefault();
+  modalContainer.classList.toggle('hiden');
 })

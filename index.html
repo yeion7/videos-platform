@@ -11,6 +11,30 @@
 
   </head>
   <body>
+    <div class="modal-container hiden" id="modal">
+      <div class="modal-box">
+        <a class="modal-close" id="modal-close">X</a>
+        <img class="modal-logo" src="./images/logo.png" alt="">
+        <form class="modal-form" action="" method="post">
+          <input class="modal-input" type="text" name="name" value="" placeholder="Nombre del usuario">
+          <input class="modal-input" type="email" name="name" value="" placeholder="Correo">
+          <button class="modal-button" type="submit" name="button">Ingresar</button>
+        </form>
+        <a href="" class="modal-button modal-button-facebook ">
+          <i class="icon-social-facebook"></i>
+          Conectar con Facebook
+        </a>
+        <a href="" class="modal-button modal-button-twitter">
+          <i class="icon-social-twitter"></i>
+          Conectar con Twitter
+        </a>
+        <div class="modal-links">
+          <a href="#" class="modal-link">No tengo Cuenta</a>
+          <a href="#" class="modal-link">Olvide mi Contraseña</a>
+        </div>
+      </div>
+    </div>
+
     <header class="header-container">
 
       <img class="header-logo" src="./images/logo-responsive.png" alt="">
@@ -42,7 +66,7 @@
           </button>
         </form>
 
-        <i class="header-icon icon-user"></i>
+        <i class="header-icon icon-user" id="signin"></i>
 
       </div>
     </header>
