@@ -51,7 +51,8 @@
 
 
 .video
-
+  &-info
+    width: 100%
   &-artist
     color $color-primary
     font-weight: bold;
@@ -73,7 +74,7 @@
   &-options
     display: flex;
     align-items: center
-    justify-content: flex-end;
+    justify-content: space-between;
 
   &-genere
     color $color-primary
@@ -81,6 +82,10 @@
     padding: .4em .8em
     border-radius: 8px
     margin: 0px .5em
+    &:hover
+      background: $color-primary
+      border: 2px solid $color-primary
+      color white
 
   &-views
   &-likes
@@ -88,7 +93,7 @@
     color $color-primary
     font-size: 2em
     margin 0 .5em
-    padding: .5em 0 
+    padding: .5em 0
 
   &-points
     margin .5em

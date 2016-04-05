@@ -24,14 +24,6 @@
             <input class="modal-input" type="email" name="name" value="" placeholder="Correo">
             <button class="modal-button" type="submit" name="button">Ingresar</button>
           </form>
-          <a href="" class="modal-button modal-button-facebook ">
-            <i class="icon-social-facebook"></i>
-            Conectar con Facebook
-          </a>
-          <a href="" class="modal-button modal-button-twitter">
-            <i class="icon-social-twitter"></i>
-            Conectar con Twitter
-          </a>
           <div class="modal-links">
             <a href="#" class="modal-link">No tengo Cuenta</a>
             <a href="#" class="modal-link">Olvide mi Contraseña</a>
@@ -57,11 +49,11 @@
         <!-- contenido reestablecer contraseña -->
 
         <!-- <p class="modal-text">
-          Ingresa el correo electrónico para reestablecer tu contraseña
+          Ingresa el número de telefono para reestablecer tu contraseña
         </p>
 
         <form class="modal-form" action="" method="post">
-          <input class="modal-input" type="email" name="name" value="" placeholder="Correo">
+          <input class="modal-input" type="email" name="name" value="" placeholder="Número telefonico">
           <button class="modal-button" type="submit" name="button">Enviar</button>
         </form>
         <div class="modal-links">
@@ -102,7 +94,7 @@
         <form action="" class="header-form">
           <input type="text" name="name" value="" class="header-input" id="search-input" placeholder="Buscar">
           <button type="submit" name="button" class="header-button" id="search-button">
-            <i class="header-icon icon-search"></i>
+            <i class="header-icon icon-search "></i>
           </button>
         </form>
 
@@ -125,24 +117,22 @@
             <div class="video-info">
               <h2 class="video-artist">Coldplay</h2>
               <h1 class="video-name">Adventure Of A Lifetime live for BBC Radio 1</h1>
-            </div>
-            <div class="video-options">
-              <div class="video-points">
-                <i class="icon-point video-point video-point_active "></i>
-                <i class="icon-point video-point"></i>
-                <i class="icon-point video-point"></i>
+              <div class="video-options">
+                <div class="video-options">
+                  <a href="#" class="video-genere">Música</a>
+                  <i class="icon-views video-views "></i>
+                  <i class="icon-like video-likes "></i>
+                </div>
+                <div class="video-points">
+                  <i class="icon-point video-point video-point_active "></i>
+                  <i class="icon-point video-point"></i>
+                  <i class="icon-point video-point"></i>
+                </div>
               </div>
-              <a href="#" class="video-genere">Música</a>
-              <i class="icon-views video-views "></i>
-              <i class="icon-like video-likes "></i>
             </div>
           </div>
         </div>
 
-        <!-- Contenedor para el reproductor -->
-        <div class="player-container">
-
-        </div>
       </section>
 
       <section class="videos-container">
@@ -163,7 +153,7 @@
         <div class="videos-items">
 
           <!-- Video individual -->
-          <div class="videos-item">
+          <div class="videos-item" id="video-item">
             <div class="videos-item-tape">
               <img src="./images/cover.jpg" class="videos-item-cover" alt="">
 

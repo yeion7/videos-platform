@@ -20,14 +20,12 @@ searchButton.addEventListener('click', function(ev) {
 })
 
 
-// var playButton = document.getElementById('play-button');
-// var heroTape = document.getElementById('hero-tape');
-//
-// playButton.addEventListener('click', function(ev) {
-//   ev.preventDefault();
-//   heroTape.classList.toggle('hiden');
-//
-// })
+var videoItem = document.getElementById('video-item');
+
+videoItem.addEventListener('click', function(ev) {
+  console.log(funciona);
+
+})
 
 
 var signinButton = document.getElementById('signin');

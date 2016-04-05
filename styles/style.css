@@ -197,6 +197,8 @@ body {
 }
 .header-input {
   width: 50%;
+  font-size: 1em;
+  font-weight: bold;
   border-radius: 5px;
   line-height: 3em;
   border: none;
@@ -292,7 +294,8 @@ body {
   font-weight: 600;
 }
 .nav-item a:hover {
-  background: #cacaca;
+  background: #dc2028;
+  color: #fff;
 }
 .nav-item a:active {
   color: #dc2028;
@@ -405,6 +408,9 @@ body {
           align-items: flex-end;
   padding: 15px;
 }
+.video-info {
+  width: 100%;
+}
 .video-artist {
   color: #dc2028;
   font-weight: bold;
@@ -435,10 +441,10 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .video-genere {
   color: #dc2028;
@@ -446,6 +452,11 @@ body {
   padding: 0.4em 0.8em;
   border-radius: 8px;
   margin: 0px 0.5em;
+}
+.video-genere:hover {
+  background: #dc2028;
+  border: 2px solid #dc2028;
+  color: #fff;
 }
 .video-views,
 .video-likes {
@@ -556,7 +567,7 @@ body {
 .videos-select {
   background: none;
   border: 1px solid #aaa;
-  font-size: 1.2em;
+  font-size: 1em;
   color: #aaa;
   border-radius: 5px;
   padding: 0.2em;
@@ -589,7 +600,7 @@ body {
   }
 }
 .videos-category {
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-weight: bold;
   text-transform: capitalize;
 }
@@ -667,6 +678,8 @@ body {
 .videos-item-time,
 .videos-item-likes,
 .videos-item-message {
+  font-size: 0.8em;
+  color: #aaa;
   font-weight: bold;
 }
 .videos-item-icon {
@@ -1341,12 +1354,6 @@ body {
   font-weight: bold;
   font-size: 1em;
   line-height: 1.2em;
-}
-.single-videos-artist,
-.single-videos-views {
-  text-transform: uppercase;
-  color: #aaa;
-  font-size: 0.7em;
 }
 .single-videos-time {
   color: #dc2028;
