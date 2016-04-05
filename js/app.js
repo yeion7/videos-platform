@@ -23,14 +23,26 @@ searchButton.addEventListener('click', function(ev) {
 
 
 // desplegar dropdown
-var videoItem = document.querySelectorAll('.video-item');
+var videosMusica = document.querySelectorAll('.videos-musica>.videos-items>.videos-item')
+var videosSeries = document.querySelectorAll('.videos-series>.videos-items>.videos-item')
+var dropdownMusica = document.querySelector('.dropdown-musica')
+var dropdownSeries = document.querySelector('.dropdown-series')
 
-videoItem.addEventListener('click', function(ev) {
-  dropdownContainer.classList.toggle('hiden');
-  this.classList.toggle("videos-selected")
+Array.prototype.map.call(videosMusica, function(item) {
+  item.addEventListener('click', function(ev) {
+    dropdownMusica.classList.toggle('hiden');
+    this.classList.toggle("videos-selected")
 
+  })
 })
 
+Array.prototype.map.call(videosSeries, function(item) {
+  item.addEventListener('click', function(ev) {
+    dropdownSeries.classList.toggle('hiden');
+    this.classList.toggle("videos-selected")
+
+  })
+})
 
 //cerrar dropdown
 var dropdownContainer = document.getElementById('dropdown-container');
