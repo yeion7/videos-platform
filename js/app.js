@@ -23,7 +23,7 @@ searchButton.addEventListener('click', function(ev) {
 
 
 // desplegar dropdown
-var videoItem = document.getElementById('video-item');
+var videoItem = document.querySelectorAll('.video-item');
 
 videoItem.addEventListener('click', function(ev) {
   dropdownContainer.classList.toggle('hiden');
