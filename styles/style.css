@@ -147,6 +147,9 @@ body {
   border: none;
   margin: 0 1em;
 }
+.skin-red {
+  color: #dc2028;
+}
 .header-container {
   height: 76px;
   background: #fdfdfd;
@@ -535,6 +538,7 @@ body {
 }
 .videos-container {
   padding: 15px;
+  position: relative;
 }
 .videos-seleccion {
   display: -webkit-box;
@@ -654,7 +658,6 @@ body {
 .videos-item-tape {
   width: 100%;
   height: 70%;
-  position: relative;
 }
 .videos-item-cover {
   width: 100%;
@@ -708,6 +711,22 @@ body {
 }
 .videos-item-title {
   font-weight: bold;
+}
+.videos-selected {
+  border: 5px solid #dc2028;
+  position: relative;
+}
+.videos-selected:after {
+  content: "";
+  z-index: 10000;
+  position: absolute;
+  bottom: -25px;
+  left: 45%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 15px 0 15px;
+  border-color: #dc2028 transparent transparent transparent;
 }
 .modal-container {
   position: fixed;
@@ -1394,4 +1413,96 @@ body {
 }
 .icon-social-share {
   background: #5cb85c;
+}
+.dropdown-container {
+  width: 100%;
+  height: 300px;
+  background: url("../images/cover.jpg");
+  position: absolute;
+  left: 0px;
+  z-index: 1000;
+  top: 420px;
+}
+.dropdown-close {
+  position: absolute;
+  right: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fefefe;
+  padding: 1em;
+}
+.dropdown-gradient {
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: -webkit-linear-gradient(left, #000, rgba(0,0,0,0));
+  background: linear-gradient(to right, #000, rgba(0,0,0,0));
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.dropdown-content {
+  width: 60%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  padding: 15px;
+}
+.dropdown-artist {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #dc2028;
+  margin-bottom: 5px;
+}
+.dropdown-name {
+  font-size: 3em;
+  font-weight: bold;
+  color: #fff;
+}
+.dropdown-time {
+  color: #dc2028;
+  font-weight: bold;
+}
+.dropdown-text {
+  color: #fff;
+  line-height: 1.2em;
+}
+.dropdown-user {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-right: 15px;
+  text-transform: uppercase;
+}
+.dropdown-icons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.dropdown-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.dropdown-player {
+  width: 35%;
+  height: 100%;
+  position: relative;
 }

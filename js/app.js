@@ -1,3 +1,5 @@
+// desplegar menu mobile
+
 var navMenu = document.getElementById('nav-menu');
 var mobileMenu = document.getElementById('mobile-menu');
 
@@ -7,7 +9,7 @@ mobileMenu.addEventListener('click', function(ev){
 
 })
 
-
+// desplegar barra de busqueda
 var searchButton = document.getElementById('search-button');
 var searchInput = document.getElementById('search-input');
 
@@ -20,14 +22,31 @@ searchButton.addEventListener('click', function(ev) {
 })
 
 
+// desplegar dropdown
 var videoItem = document.getElementById('video-item');
 
 videoItem.addEventListener('click', function(ev) {
-  console.log(funciona);
+  dropdownContainer.classList.toggle('hiden');
+  this.classList.toggle("videos-selected")
 
 })
 
 
+//cerrar dropdown
+var dropdownContainer = document.getElementById('dropdown-container');
+var dropdownClose = document.getElementById('dropdown-close');
+
+dropdownClose.addEventListener('click', function(ev) {
+  dropdownContainer.classList.toggle('hiden');
+  videoItem.classList.remove("videos-selected")
+
+})
+
+
+
+
+
+//desplegar modal
 var signinButton = document.getElementById('signin');
 var modalContainer = document.getElementById('modal')
 var modalButton = document.getElementById('modal-close');
@@ -35,7 +54,6 @@ var modalButton = document.getElementById('modal-close');
 
 signinButton.addEventListener('click', function(ev) {
   ev.preventDefault();
-  console.log('fnu')
   modalContainer.classList.toggle('hiden');
 
 })
