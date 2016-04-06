@@ -28,9 +28,23 @@ var videosSeries = document.querySelectorAll('.videos-series>.videos-items>.vide
 var dropdownMusica = document.querySelector('.dropdown-musica')
 var dropdownSeries = document.querySelector('.dropdown-series')
 
+function removeSelect(arr) {
+  console.log(arr);
+  Array.prototype.map.call(arr, function(item) {
+
+    if(item.classList.contains("videos-selected")) {
+      item.classList.remove("videos-selected")
+    }
+  })
+ }
+
+
 Array.prototype.map.call(videosMusica, function(item) {
   item.addEventListener('click', function(ev) {
-    dropdownMusica.classList.toggle('hiden');
+    removeSelect(videosMusica)
+    if(dropdownMusica.classList.contains('hiden')) {
+      dropdownMusica.classList.toggle('hiden');
+    }
     this.classList.toggle("videos-selected")
 
   })
@@ -38,8 +52,12 @@ Array.prototype.map.call(videosMusica, function(item) {
 
 Array.prototype.map.call(videosSeries, function(item) {
   item.addEventListener('click', function(ev) {
-    dropdownSeries.classList.toggle('hiden');
+    removeSelect(videosSeries)    
     this.classList.toggle("videos-selected")
+    if(dropdownMusica.classList.contains('hiden')) {
+      dropdownSeries.classList.toggle('hiden');
+    }
+
 
   })
 })
@@ -50,7 +68,7 @@ var dropdownClose = document.getElementById('dropdown-close');
 
 dropdownClose.addEventListener('click', function(ev) {
   dropdownContainer.classList.toggle('hiden');
-  videoItem.classList.remove("videos-selected")
+  removeSelect(videosMusica)
 
 })
 
