@@ -1432,6 +1432,7 @@ body {
   font-weight: bold;
   color: #fefefe;
   padding: 1em;
+  cursor: pointer;
 }
 .dropdown-gradient {
   width: 100%;

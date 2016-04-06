@@ -28,50 +28,52 @@ var videosSeries = document.querySelectorAll('.videos-series>.videos-items>.vide
 var dropdownMusica = document.querySelector('.dropdown-musica')
 var dropdownSeries = document.querySelector('.dropdown-series')
 
-function removeSelect(arr) {
-  console.log(arr);
-  Array.prototype.map.call(arr, function(item) {
-
+function removeSelect(target) {
+  Array.prototype.map.call(target, function(item) {
     if(item.classList.contains("videos-selected")) {
       item.classList.remove("videos-selected")
     }
   })
  }
 
+function toggleDropdown(type) {
+   if(type.classList.contains('hiden')) {
+     type.classList.toggle('hiden');
+   }
+ }
 
-Array.prototype.map.call(videosMusica, function(item) {
-  item.addEventListener('click', function(ev) {
-    removeSelect(videosMusica)
-    if(dropdownMusica.classList.contains('hiden')) {
-      dropdownMusica.classList.toggle('hiden');
-    }
-    this.classList.toggle("videos-selected")
-
+function listenerVideos(target, dropdown) {
+  Array.prototype.map.call(target, function(item) {
+    item.addEventListener('click', function(ev) {
+      removeSelect(target)
+      this.classList.toggle("videos-selected")
+      toggleDropdown(dropdown)
+    })
   })
-})
-
-Array.prototype.map.call(videosSeries, function(item) {
-  item.addEventListener('click', function(ev) {
-    removeSelect(videosSeries)    
-    this.classList.toggle("videos-selected")
-    if(dropdownMusica.classList.contains('hiden')) {
-      dropdownSeries.classList.toggle('hiden');
-    }
+}
 
 
-  })
-})
+listenerVideos(videosMusica, dropdownMusica)
+listenerVideos(videosSeries, dropdownSeries)
+
+
 
 //cerrar dropdown
-var dropdownContainer = document.getElementById('dropdown-container');
-var dropdownClose = document.getElementById('dropdown-close');
+var dropdownContainers = document.querySelectorAll('.dropdown-container');
+var dropdownClose = document.querySelectorAll('.dropdown-close');
 
-dropdownClose.addEventListener('click', function(ev) {
-  dropdownContainer.classList.toggle('hiden');
-  removeSelect(videosMusica)
 
-})
-
+Array.prototype.map.call(dropdownClose, function(item) {
+    item.addEventListener('click', function(ev) {
+      Array.prototype.map.call(dropdownContainers, function(item) {
+        if(!item.classList.contains('hiden')) {
+          item.classList.add('hiden');
+        }
+      });
+      removeSelect(videosMusica)
+      removeSelect(videosSeries)
+    });
+  });
 
 
 
