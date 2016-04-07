@@ -176,8 +176,8 @@ body {
   display: flex;
 }
 .header-logo {
-  width: 150px;
-  height: auto;
+  width: auto;
+  height: 60px;
 }
 @media screen and (max-width: 768px) {
   .header-logo {
