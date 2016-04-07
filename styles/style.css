@@ -176,8 +176,22 @@ body {
   display: flex;
 }
 .header-logo {
+  width: 150px;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  .header-logo {
+    display: none;
+  }
+}
+.header-logo-responsive {
   width: 60px;
   height: auto;
+}
+@media screen and (min-width: 769px) {
+  .header-logo-responsive {
+    display: none;
+  }
 }
 .header-icon {
   padding: 0.5em;
